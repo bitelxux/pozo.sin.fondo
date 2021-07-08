@@ -1,0 +1,12 @@
+docker run -d \
+-v /root/docker/mysql-alexa:/var/lib/mysql \
+-p 3306:3306 \
+--name mysql_alexa \
+--restart always \
+mysql/mysql-server
+
+docker logs mysql_alexa 2>&1 | grep GENERATE
+docker exec -it mysql_alexa mysql -uroot -p
+mysql> ALTER USER 'root%'@'%' IDENTIFIED WITH mysql_native_password BY 'youpassword';
+mysql> update mysql.user set host = '%' where user='root';
+
