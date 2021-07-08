@@ -8,3 +8,8 @@ Features:
 - You can ask "alexa, what do you have about xxxx" and alexa will report all entries with xxxx
 
 So far only server side. I'll add the Alexa skill at some point
+
+Oh ! it's only for Spanish for now so
+
+"Alexa, apunta xxxxxx" to register a note
+"Alexa, que tienes|tengo sobre xxxxx" to ask
