@@ -1,0 +1,10 @@
+# pozo.sin.fondo
+
+Server side of skill "pozo sin fondo".
+
+Features:
+
+- It recognizes users
+- You can ask "alexa, what do you have about xxxx" and alexa will report all entries with xxxx
+
+So far only server side. I'll add the Alexa skill at some point
